@@ -169,6 +169,18 @@ def game_state(word, guessed_letters, tries):
     print(f"You have {tries} tries left")
     print(f"Guessed letters: {', '.join(sorted(guessed_letters))}")
 
+def play_hangman_again():
+    while True:
+        play_again = input("Would you like to play again? (y/n):\n ").lower()
+
+        if play_again == 'y':
+            main()
+        elif play_again == 'n':
+            print("Thanks for playing Hangman! Goodbye!")
+            break
+        else:
+            print("Invalid input. Please enter 'y' to play again or\
+                  'n' to exit.")
 
 def main():
     show_title()
@@ -188,6 +200,8 @@ def main():
     print(f"Chosen difficulty level: {level}")
 
     game_play(word)
+
+    play_hangman_again()
 
 if __name__ == "__main__":
     main()
