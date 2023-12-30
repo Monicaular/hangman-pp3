@@ -1,4 +1,5 @@
-
+import words
+import random
 
 def show_title():
     """
@@ -99,6 +100,76 @@ def extract_word(word_list):
     return word.upper()
 
 
+def game_play(word):
+    """
+    Checks if inserted letters and words are correct and validates them
+    """
+    word_completed = "_" * len(word)
+    guessed_letters = set()
+    guessed_words = set()
+    tries = 6
+
+    while tries > 0:
+        game_state(word, guessed_letters, tries)
+        guess = input("Please guess a letter or a word:\n ").upper()
+
+        # Checks if the input is a single letter
+        if guess.isalpha() and len(guess) == 1:
+            # Checks if the input is in the previously input list
+            if guess in guessed_letters:
+                print(f"You already guessed the letter {guess}. Try again.")
+            # Checks that the word does not contain the input letter
+            elif guess not in word:
+                print(f"{guess} is not in the word.")
+                tries -= 1
+                guessed_letters.add(guess)
+            # Checks that the word contains the input letter
+            else:
+                print(f"Well done, {guess} is in the word.")
+                guessed_letters.add(guess)
+                # Converts the string into a list of charcters
+                word_as_list = list(word_completed)
+                # Shows where the guessed letters are situatued in the word
+                indices = [
+                    i for i, letter in enumerate(word)
+                    if letter == guess
+                ]
+
+                for index in indices:
+                    word_as_list[index] = guess
+
+                # Joins the elements of the list into a string
+                word_completed = "".join(word_as_list)
+
+                # Checks if there are more space in the word
+                if "_" not in word_completed:
+                    print(f'Well Done! You guessed the word: {word}')
+                    return
+            
+        # Checks if the input is multiple letters
+        elif guess.isalpha() and len(guess) > 1:
+            # Checks if the input word matches the word
+            if guess == word:
+                print(f'Congratulations! You guessed the word: {word}')
+                return
+            else:
+                print("Incorrect word guess. Try again.")
+                tries -= 1
+                guessed_words.add(guess)
+        else:
+            print("Invalid input. Please enter letters.")
+    print(f"Sorry, you're out of tries. The word was: {word}")  
+
+def game_state(word, guessed_letters, tries):
+    print(words.hangman_graphic[6 - tries])
+    display_word = " ".join([letter if letter \
+                            in guessed_letters else "_" for letter \
+                            in word])
+    print(f"Word: {display_word}")
+    print(f"You have {tries} tries left")
+    print(f"Guessed letters: {', '.join(sorted(guessed_letters))}")
+
+
 def main():
     show_title()
     show_rules()
@@ -115,7 +186,8 @@ def main():
     word = extract_word(word_list)
 
     print(f"Chosen difficulty level: {level}")
-    
+
+    game_play(word)
 
 if __name__ == "__main__":
     main()
