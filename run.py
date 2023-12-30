@@ -70,11 +70,41 @@ def add_username():
             print(f"\n{username.capitalize()}, get ready to unravel the mystery!")
             return username
 
+def choose_difficulty():
+    """
+    Gets the user to choose the difficulty of the game that they prefer
+    """
+    while True:
+        try:
+            print("\nChoose the difficulty level:")
+            print("1 - Easy")
+            print("2 - Medium")
+            print("3 - Hard")
+
+            choice = input("Choose between 1, 2 and 3: ")
+            choice = int(choice)
+            # Validate user input
+            if choice not in [1, 2, 3]:
+                raise ValueError("\nInvalid choice. Please enter 1, 2, or 3.\n")
+            return choice  # Return the selected choice
+        except ValueError as e:
+            print(e)
+
+
+
 def main():
     show_title()
     show_rules()
     add_username()
-    
+    level = choose_difficulty()
+
+    if level == 1:
+        word_list = words.easy_level_words
+    elif level == 2:
+        word_list = words.medium_level_words
+    else:
+        word_list = words.hard_level_words
+
     
     
 
