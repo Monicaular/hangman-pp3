@@ -91,6 +91,13 @@ def choose_difficulty():
             print(e)
 
 
+def extract_word(word_list):
+    """
+    Returns a randomly selected word from the given word list.
+    """
+    word = random.choice(word_list)
+    return word.upper()
+
 
 def main():
     show_title()
@@ -105,7 +112,9 @@ def main():
     else:
         word_list = words.hard_level_words
 
-    
+    word = extract_word(word_list)
+
+    print(f"Chosen difficulty level: {level}")
     
 
 if __name__ == "__main__":

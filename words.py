@@ -35,31 +35,31 @@ medium_level_words = [
     'bicycle',
     'pancakes',
     'baseball',
-    'lasagna', 
+    'lasagna',
     'popcorn'
 ]
 
 hard_level_words = [
-'clandestine',
-'effervescent',
-'juxtaposition',
-'perspicacious',
-'serendipity',
-'cacophony',
-'idiosyncrasy',
-'quintessential',
-'esoteric',
-'ubiquitous',
-'mellifluous',
-'phantasmagoria',
-'sesquipedalian',
-'discombobulate',
-'unscrupulous',
-'ephemeral',
-'superfluous',
-'antediluvian',
-'unequivocal',
-'prevaricate',
+    'clandestine',
+    'effervescent',
+    'juxtaposition',
+    'perspicacious',
+    'serendipity',
+    'cacophony',
+    'idiosyncrasy',
+    'quintessential',
+    'esoteric',
+    'ubiquitous',
+    'mellifluous',
+    'phantasmagoria',
+    'sesquipedalian',
+    'discombobulate',
+    'unscrupulous',
+    'ephemeral',
+    'superfluous',
+    'antediluvian',
+    'unequivocal',
+    'prevaricate',
 ]
 
 hangman_graphic = ['''
@@ -94,22 +94,21 @@ hangman_graphic = ['''
   +---+
   |   |
   O   |
- /|\  |
+ /|\\  |
       |
       |
 =========''', '''
   +---+
   |   |
   O   |
- /|\  |
+ /|\\  |
  /    |
       |
 =========''', '''
   +---+
   |   |
   O   |
- /|\  |
- / \  |
+ /|\\  |
+ / \\ |
       |
-========='''
-]
+=========''']
