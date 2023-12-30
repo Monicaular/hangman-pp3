@@ -42,9 +42,38 @@ def show_rules():
     else:
         print("You choose to skip the rules. Let's start the game")
 
+def add_username():
+    """
+    Asks the player to insert a username and validates the input
+    """   
+    while True:
+        try:
+            print()
+            username = input("Please enter a username:\n")
+            # Check if the input contains spaces
+            if " " in username:
+                raise ValueError("Username cannot contain spaces.")
+            # Check if the input contains only numbers and letters
+            if not username.isalnum():
+                raise ValueError("Please enter letters and numbers.")
+            # Check if the input contains only spaces
+            if not username.strip():
+                raise ValueError("Please enter letters and numbers.")
+            # Check if the input exceeds 8 characters
+            if len(username) > 8:
+                raise ValueError("Username must not exceed 8 characters.")
+        # Catch any ValueError exception and print the error message
+        except ValueError as e:
+            print(f"{e}")
+        # If no exception is raised, print a message and return the name
+        else:
+            print(f"\n{username.capitalize()}, get ready to unravel the mystery!")
+            return username
+
 def main():
     show_title()
     show_rules()
+    add_username()
     
     
     
