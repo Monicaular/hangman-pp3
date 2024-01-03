@@ -1,10 +1,12 @@
 import words
 import random
+from style import Color, style_colors
 
 def show_title():
     """
     Shows the the name of the game in a more graphical style
     """
+    lilac_color = style_colors['lilac']
     
     game_title = """
   _    _            _   _    _____   ___  ___            _   _
@@ -16,12 +18,14 @@ def show_title():
                                                          
 Welcome to Hangman Game!
     """
-    print(game_title)
+    coloured_game_title = lilac_color.format(game_title)
+    print(coloured_game_title)
 
 def show_rules():
     """
     Displays the game's rules - if the users wishes to
     """
+    pink_color = style_colors['pink']
     display_rules = input("Would you like to see the game rules? (Y/N)\n ")
     while display_rules.upper() not in ["Y", "N"]:
         display_rules = input('Please only insert Y or N\n').upper()
@@ -39,7 +43,9 @@ def show_rules():
         print("\nPlaying Rules:\n ")
         # displays the rules in multiple lines
         for rule in rules:
-            print(rule)
+            formatted_rule = pink_color.format(rule)
+            print(f"  - {formatted_rule}")
+            
     else:
         print("You choose to skip the rules. Let's start the game")
 
@@ -104,6 +110,8 @@ def game_play(word):
     """
     Checks if inserted letters and words are correct and validates them
     """
+    red_color = style_colors['pale_red']
+    green_color = style_colors['bright_green']
     word_completed = "_" * len(word)
     guessed_letters = set()
     guessed_words = set()
@@ -120,12 +128,14 @@ def game_play(word):
                 print(f"You already guessed the letter {guess}. Try again.")
             # Checks that the word does not contain the input letter
             elif guess not in word:
-                print(f"{guess} is not in the word.")
+                error_message = f"{guess} is not in the word."
+                print(red_color.format(error_message))
                 tries -= 1
                 guessed_letters.add(guess)
             # Checks that the word contains the input letter
             else:
-                print(f"Well done, {guess} is in the word.")
+                guess_message = f"Well done, {guess} is in the word."
+                print(green_color.format(guess_message))
                 guessed_letters.add(guess)
                 # Converts the string into a list of charcters
                 word_as_list = list(word_completed)
@@ -161,6 +171,10 @@ def game_play(word):
     print(f"Sorry, you're out of tries. The word was: {word}")  
 
 def game_state(word, guessed_letters, tries):
+    """
+    It provides the Hangman Game implementation and makes a more user friendly display
+    """
+    # Displays the hangman graphic
     print(words.hangman_graphic[6 - tries])
     display_word = " ".join([letter if letter \
                             in guessed_letters else "_" for letter \
@@ -170,6 +184,9 @@ def game_state(word, guessed_letters, tries):
     print(f"Guessed letters: {', '.join(sorted(guessed_letters))}")
 
 def play_hangman_again():
+    """
+    It asks the player if they want to play again
+    """
     while True:
         play_again = input("Would you like to play again? (y/n):\n ").lower()
 
@@ -183,6 +200,14 @@ def play_hangman_again():
                   'n' to exit.")
 
 def main():
+    """
+    This function is the primary driver of the game program,
+    It first diaplys the title of the game,
+    Then it displays the rules and adds a username, 
+    It prompts the user to choose the difficulty and assigns it,
+    Selects a random word from the chosen word list, 
+    Initiates the game play and lastly it prompts the user to decide whether to play the game again. 
+    """
     show_title()
     show_rules()
     add_username()
