@@ -2,6 +2,7 @@ import words
 import random
 from style import Color, style_colors
 
+
 def show_title():
     """
     Shows the the name of the game in a more graphical style
@@ -21,6 +22,7 @@ Welcome to Hangman Game!
     coloured_game_title = lilac_color.format(game_title)
     print(coloured_game_title)
 
+
 def show_rules():
     """
     Displays the game's rules - if the users wishes to
@@ -32,13 +34,13 @@ def show_rules():
     
     if display_rules.upper() == "Y":
         rules = [
-        "Insert your username so we know who are we playing with",
-        "Choose a difficulty level between easy, medium, and hard",
-        "Choose a letter or a word to guess",
-        "A correct letter will show you its position(s) in the word",
-        "A wrong letter would add to the hangman",
-        "You have six tries to guess, otherwise the man will be hanged",
-        "Let's begin the fun"
+            "Insert your username so we know who are we playing with",
+            "Choose a difficulty level between easy, medium, and hard",
+            "Choose a letter or a word to guess",
+            "A correct letter will show you its position(s) in the word",
+            "A wrong letter would add to the hangman",
+            "You have six tries to guess, otherwise the man will be hanged",
+            "Let's begin the fun"
         ]
         print("\nPlaying Rules:\n ")
         # displays the rules in multiple lines
@@ -172,7 +174,8 @@ def game_play(word):
 
 def game_state(word, guessed_letters, tries):
     """
-    It provides the Hangman Game implementation and makes a more user friendly display
+    It provides the Hangman Game implementation and
+    makes a more user friendly display
     """
     # Displays the hangman graphic
     print(words.hangman_graphic[6 - tries])
@@ -206,7 +209,8 @@ def main():
     Then it displays the rules and adds a username, 
     It prompts the user to choose the difficulty and assigns it,
     Selects a random word from the chosen word list, 
-    Initiates the game play and lastly it prompts the user to decide whether to play the game again. 
+    Initiates the game play and
+    lastly it prompts the user to decide whether to play the game again. 
     """
     show_title()
     show_rules()
