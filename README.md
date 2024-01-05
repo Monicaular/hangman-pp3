@@ -1,13 +1,13 @@
 # Hangman
 
-## Introduction
+## Introduction <a name="introduction"></a>
 
 Hangman is a classic that has been played by people of all ages on paper for many years, prior to the emergence of technology. </br>
 It's a popular choice for those who enjoy intellectual challenges and want to spend quality time with their friends. </br>
 
 This digital version of Hangman is designed to enhance the traditional paper game, but with the added feature that it can be played solo against the computer.
 
-## Description
+## Description <a name="description"></a>
  
 As soon as the user starts the game, they will be prompted to enter a letter or a word. </br>
 If the input is correct, a message will be displayed indicating the correct letter replacement. The gallows and the previously guessed letters will also be displayed. </br>
@@ -19,4 +19,33 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 ![Screenshot of the start page of the hangman game](/readme-screenshots/initialising-game-screenshot.png)
 
 **View the Hangman live game** [HERE](https://hangman-monica-pp3-cfdaaa86683d.herokuapp.com/)
+
+# Table of contents
+1. [Introduction](#introduction)
+2. [Description](#description)
+
+3. [How to Play](#how-to-play)
+4. [Flowchart](#flowchart)
+5. [User Experience (UX)](#user-experience)
+
+## How to play <a name="how to play"></a>
+The game will begin by asking the user to review the rules of the game. After that, the user will create a username and select the difficulty level. They will then proceed to play against the computer and will be prompted to guess either a word or a letter. The game will continue until the user has guessed all the letters or the entire word, or until they have run out of attempts.
+
+## Flowchart <a name="flowchart"></a>
+
+![Image with the Hangman game flowchart ](/readme-screenshots/hangman-game-flowchart.png)
+
+## User Experience (UX) <a name="user experince"></a>
+
+
+3. [How to Play](#how-to-play)
+4. [Flowchart](#flowchart)
+5. [User Experience (UX)](#user-experience)
+
+## How to play <a name="how to play"></a>
+The game will begin by asking the user to review the rules of the game. After that, the user will create a username and select the difficulty level. They will then proceed to play against the computer and will be prompted to guess either a word or a letter. The game will continue until the user has guessed all the letters or the entire word, or until they have run out of attempts.
+
+
+
+
 
