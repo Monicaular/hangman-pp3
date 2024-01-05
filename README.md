@@ -47,5 +47,11 @@ The game will begin by asking the user to review the rules of the game. After th
 
 
 
+## Flowchart <a name="flowchart"></a>
+
+
+![Image with the Hangman game flowchart ](/readme-screenshots/hangman-game-flowchart.png)
+
+
 
 
