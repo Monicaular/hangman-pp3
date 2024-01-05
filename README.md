@@ -23,35 +23,22 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 # Table of contents
 1. [Introduction](#introduction)
 2. [Description](#description)
-
 3. [How to Play](#how-to-play)
 4. [Flowchart](#flowchart)
 5. [User Experience (UX)](#user-experience)
 
+
 ## How to play <a name="how to play"></a>
 The game will begin by asking the user to review the rules of the game. After that, the user will create a username and select the difficulty level. They will then proceed to play against the computer and will be prompted to guess either a word or a letter. The game will continue until the user has guessed all the letters or the entire word, or until they have run out of attempts.
 
+
+
 ## Flowchart <a name="flowchart"></a>
 
+
 ![Image with the Hangman game flowchart ](/readme-screenshots/hangman-game-flowchart.png)
+
 
 ## User Experience (UX) <a name="user experince"></a>
-
-
-3. [How to Play](#how-to-play)
-4. [Flowchart](#flowchart)
-5. [User Experience (UX)](#user-experience)
-
-## How to play <a name="how to play"></a>
-The game will begin by asking the user to review the rules of the game. After that, the user will create a username and select the difficulty level. They will then proceed to play against the computer and will be prompted to guess either a word or a letter. The game will continue until the user has guessed all the letters or the entire word, or until they have run out of attempts.
-
-
-
-## Flowchart <a name="flowchart"></a>
-
-
-![Image with the Hangman game flowchart ](/readme-screenshots/hangman-game-flowchart.png)
-
-
 
 
