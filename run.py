@@ -49,7 +49,7 @@ def show_rules():
             print(f"  - {formatted_rule}")
             
     else:
-        print("You choose to skip the rules. Let's start the game")
+        print("You chose to skip the rules. Let's start the game")
 
 def add_username():
     """
@@ -78,6 +78,7 @@ def add_username():
         else:
             print(f"\n{username.capitalize()}, get ready to unravel the mystery!")
             return username
+
 
 def choose_difficulty():
     """
@@ -136,7 +137,7 @@ def game_play(word):
                 guessed_letters.add(guess)
             # Checks that the word contains the input letter
             else:
-                guess_message = f"Well done, {guess} is in the word."
+                guess_message = f"Terrific, {guess} is in the word."
                 print(green_color.format(guess_message))
                 guessed_letters.add(guess)
                 # Converts the string into a list of charcters
@@ -205,7 +206,7 @@ def play_hangman_again():
 def main():
     """
     This function is the primary driver of the game program,
-    It first diaplys the title of the game,
+    It first displays the title of the game,
     Then it displays the rules and adds a username, 
     It prompts the user to choose the difficulty and assigns it,
     Selects a random word from the chosen word list, 
