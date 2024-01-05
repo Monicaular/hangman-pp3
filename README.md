@@ -15,3 +15,8 @@ If the correct word is guessed, the whole word will be revealed, and a message i
 However, if the input is wrong, the user will be informed about their number of attempts, and the gallows with the penalty will be displayed.
 
 Overall, Hangman is an enjoyable and demanding game that involves a combination of guessing abilities and vocabulary knowledge. It is a fantastic way to assess your skills and have a good time simultaneously.
+
+![Screenshot of the start page of the hangman game](/readme-screenshots/initialising-game-screenshot.png)
+
+**View the Hangman live game** [HERE](https://hangman-monica-pp3-cfdaaa86683d.herokuapp.com/)
+
