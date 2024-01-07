@@ -138,6 +138,17 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * Score tracking system
 * More advanced graphics
 
+## Design
+
+* Colours
+    * Pink
+    * Lilac
+    * Red
+    * Green
+
+* Flowchart
+    * [Lucidchart](https://www.lucidchart.com/pages/)
+
 
 
 
