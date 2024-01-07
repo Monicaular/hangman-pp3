@@ -149,6 +149,10 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * Flowchart
     * [Lucidchart](https://www.lucidchart.com/pages/)
 
+## Technologies used
+
+* [Phyton 3.12](https://www.python.org/)
+
 
 
 
