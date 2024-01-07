@@ -173,7 +173,9 @@ def game_play(word, username):
                 guessed_words.add(guess)
         else:
             print("Invalid input. Please enter letters.")
-    print(f"Nice try, perhaps you need more practice, {username.capitalize()}.")
+    print(words.hangman_graphic[6])
+    lost_message = f"You lost, perhaps you need more practice, {username.capitalize()}."
+    print(red_color.format(lost_message))
     print(f"The word was: {word}")
 
 def game_state(word, guessed_letters, tries):
