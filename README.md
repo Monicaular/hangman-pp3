@@ -78,5 +78,56 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * **Difficulty setting** - the user can choose the difficulty level. 
 * **Play again** - the user can choose to play again or to exit.
 
+### Existing Features
+* **Start Screen**
+    * Shows the graphic title and the welcome message
+
+![Screenshot of the game title](/readme-screenshots/intro-screen.png)
+
+* **Playing Rules**
+    * User has the choice to view the play rules or to skip them
+
+![Screenshot of the playing rules](/readme-screenshots/game-rules.png)
+
+* **Creating a username and introduction message**
+    * User can create a username
+
+![Screenshot of creating username and introduction message](/readme-screenshots/create-username.png)
+
+* **Difficulty Setting**
+    * User can choose between easy, medium and hard
+
+![Screenshot of choosing difficulty level](/readme-screenshots/difficulty-choice.png)
+
+* **Guessing prompt**
+    * Prompting the user for guessing letter or word
+
+![Screenshot of the hidden word display](/readme-screenshots/make-a-guess.png)
+
+* **Correct letter**
+    * If letter is guessed, a message saying that letter is in the word will show
+
+![Screenshot of the correct guess message](/readme-screenshots/guessed-letter.png)
+
+* **Incorrect letter**
+
+    * If the user inserts a wrong letter, a red message will be shown that the letetr is not in the hidden word
+
+![Screenshot of the incorrect guess message](/readme-screenshots/incorrect-guess.png)
+
+* **Guess of the word**
+    * The user will get a congrats message if he guesses the word
+
+![Screenshot of guessed word message](/readme-screenshots/guessed-word.png)
+
+* **Out of tries**
+    * User is shown a message that they are out of tries
+
+![Screenshot of out of tries message](/readme-screenshots/out-of-tries.png)
+
+
+
+
+
 
 

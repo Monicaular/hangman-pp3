@@ -184,11 +184,12 @@ def game_state(word, guessed_letters, tries):
     # Displays the hangman graphic
     print(words.hangman_graphic[6 - tries])
     display_word = " ".join([letter if letter \
-                            in guessed_letters else "_" for letter \
-                            in word])
+                                in guessed_letters else "_" for letter \
+                                in word])
     print(f"Word: {display_word}")
     print(f"You have {tries} tries left")
     print(f"Guessed letters: {', '.join(sorted(guessed_letters))}")
+
 
 def play_hangman_again():
     """
