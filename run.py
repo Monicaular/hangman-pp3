@@ -165,8 +165,7 @@ def game_play(word, username):
         elif guess.isalpha() and len(guess) > 1:
             # Checks if the input word matches the word
             if guess == word:
-                congrats_message = f"Nicely done, you are\
-                a Hangman pro {username.capitalize()}"
+                congrats_message = f"Nicely done, you are a Hangman pro {username.capitalize()}"
                 print(green_color.format(congrats_message))
                 print(f'You guessed the word: {word}')
                 return
@@ -177,8 +176,7 @@ def game_play(word, username):
         else:
             print("Invalid input. Please enter letters.")
     print(words.hangman_graphic[6])
-    lost_message = f"You lost, perhaps\
-    you need more practice, {username.capitalize()}."
+    lost_message = f"You lost, perhaps you need more practice, {username.capitalize()}."
     print(red_color.format(lost_message))
     print(f"The word was: {word}")
 

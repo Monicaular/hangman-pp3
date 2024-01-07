@@ -34,8 +34,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 9. [Technologies](#technologies)
 10. [Frameworks, Libraries & Programs Used](#frameworks-used)
 11. [Testing](#testing)
-
-
+12. [Manual Testing](#manual-testing)
 
 
 ## How to play <a name="how to play"></a>
@@ -196,7 +195,20 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 
 </details>
 
+## Manual Testing <a name="manual testing"></a>
 
+The game has been manually tested multiple times during the coding phase. Additionally, it was checked after being deployed to Heroku to ensure that all features are displaying as intended. Furthermore, friends and relatives have also tested the game. 
+Testing was performed on various aspects, such as rules display, username input validation, select difficulty input validation, gallows ASCII image display, correct and incorrect answers, and win or lose display. Finally, the play again feature was also tested.
+
+| Feature | Expected Result | Steps Taken | Actual Result | Screenshot |
+| ------- | ----------------| ------------ | ------------ | ----------|
+| Start Screen | To show the graphic and the welcome message| None | As intended | ![Screenshot with the logo and welcome message](/readme-screenshots/intro-screen.png) |
+| Display Rules | To display rules or to skip them by using letters "y" and "n" | Insert "y" to view and "n" to skip | As intented | ![Screenshot of the displayed rules](/readme-screenshots/game-rules.png) |
+| Create Username | To get username and use it in the game's messages | Insert alphanunumeric username | As intented | ![Screenshot os the entered username](/readme-screenshots/create-username.png) |
+| Personalised Message With The Username | To display username in messages | None | As intented | ![Screenshot with the personalised messages](/readme-screenshots/personalised-message-lost.png) ![Another screenshot](/readme-screenshots/personalised-messsage-won.png) |
+| Choose Difficulty Level | To retrieve the number from the options | Insert 1, 2 or 3 | As intented | ![Screenshot with the difficulty level options](/readme-screenshots/difficulty-choice.png) |
+| Guess a letter or a word | Prompts the user to guess a letter or go for the whole word | Input a letter or a word to guess | As intented | ![Screenshot of the prompt to enter a letter or a word](/readme-screenshots/make-a-guess.png) |
+| Correct Guess | To display the position of the letter, the gallows with no lost tries, a list of the letters that already been inserted | Guessed a correct letter | As intented | ![Screenshot of a correct guessed letter](/readme-screenshots/guessed-letter.png)
 
 
 
