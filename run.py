@@ -124,9 +124,6 @@ def game_play(word, username):
         game_state(word, guessed_letters, tries)
         guess = input("Please guess a letter or a word:\n ").upper()
 
-        if tries == 1:
-            print(red_color.format("This is your last chance, choose carefully"))
-
         # Checks if the input is a single letter
         if guess.isalpha() and len(guess) == 1:
             # Checks if the input is in the previously input list
@@ -171,7 +168,7 @@ def game_play(word, username):
                 print(f'You guessed the word: {word}')
                 return
             else:
-                print("Incorrect word guess. Try again.")
+                print("Incorrect word guess.")
                 tries -= 1
                 guessed_words.add(guess)
         else:
@@ -183,7 +180,7 @@ def game_state(word, guessed_letters, tries):
     """
     It provides the Hangman Game implementation and
     makes a more user friendly display
-    """
+    """      
     # Displays the hangman graphic
     print(words.hangman_graphic[6 - tries])
     display_word = " ".join([letter if letter \
