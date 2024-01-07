@@ -153,7 +153,20 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 
 * [Phyton 3.12](https://www.python.org/)
 
+## Frameworks, Libraries & Programs Used
 
+* [Codeanywhere](https://app.codeanywhere.com/)
+    * To write the code for the game.
+* [Git](https://git-scm.com/)
+    * For version control.
+* [Github](https://github.com/)
+    * Deployment of the website and storing the files online.
+* [Lucidchart](https://www.lucidchart.com/pages/)
+    * To create the flowchart for the game
+* [Heroku](https://dashboard.heroku.com/apps)
+    * To deploy the project.
+* [CI Python Linter](https://pep8ci.herokuapp.com/)
+    * To check the code for errors.
 
 
 
