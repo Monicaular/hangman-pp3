@@ -96,8 +96,7 @@ def choose_difficulty():
             choice = int(choice)
             # Validate user input
             if choice not in [1, 2, 3]:
-                raise ValueError("\nInvalid choice.\
-                                Please enter 1, 2, or 3.\n")
+                raise ValueError("\nInvalid choice. Please enter 1, 2, or 3.\n")
             return choice  # Return the selected choice
         except ValueError as e:
             print(e)

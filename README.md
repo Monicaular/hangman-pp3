@@ -35,6 +35,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 10. [Frameworks, Libraries & Programs Used](#frameworks-used)
 11. [Testing](#testing)
 12. [Manual Testing](#manual-testing)
+13. [Input Validation Testing](#input-validation-testing)
 
 
 ## How to play <a name="how to play"></a>
@@ -216,5 +217,18 @@ Testing was performed on various aspects, such as rules display, username input 
 | Lose The Game | To show a message confirming the lose | Fail to guess in 6 tries | As intended | ![Screenshot with the losing game message](/readme-screenshots/out-of-tries-1.png) |
 | Play Again | To display the play again choice message | Choose between "y" and "n" | As intended | ![Screenshot with the play again message](/readme-screenshots/play-again.png) |
 
+## Input validation testing <a name="input validation"></a>
+
+* Display rules
+    * Cannot conitue if the input is empty
+    * It must be either a "y" or an "n"
+
+![Screenshot with the validation for displaying the rules](/readme-screenshots/rules-input-validation.png)
+
+* Enter username
+    * Username cannot be empty
+    * Username must be formed of letters and numbers
+    * Username cannot contain special charcters
+    * Username has a maximum 8 characters rule
 
 
