@@ -209,6 +209,12 @@ Testing was performed on various aspects, such as rules display, username input 
 | Choose Difficulty Level | To retrieve the number from the options | Insert 1, 2 or 3 | As intented | ![Screenshot with the difficulty level options](/readme-screenshots/difficulty-choice.png) |
 | Guess a letter or a word | Prompts the user to guess a letter or go for the whole word | Input a letter or a word to guess | As intented | ![Screenshot of the prompt to enter a letter or a word](/readme-screenshots/make-a-guess.png) |
 | Correct Guess | To display the position of the letter, the gallows with no lost tries, a list of the letters that already been inserted | Guessed a correct letter | As intented | ![Screenshot of a correct guessed letter](/readme-screenshots/guessed-letter.png)
+| Incorrect Guess | To display incorrect message, the gallows with the left tries, the list with the already insterted letted and updated word | Guessed wrong letter | As intented | ![Screenshot with the incorrect guess message](/readme-screenshots/incorrect-guess.png) |
+| Repeated Guess | To display a message saying guessed already, no penalty applied | Input a letter previously inserted | As intented | ![Screenshot of a message for a second input of a letter](/readme-screenshots/previous-guess.png) |
+| Hangman Gallows | To show the updated hangman gallows | Input several letters | As intented | ![Screenshots with the gallows updating whilist inserting right or wrong letters](/readme-screenshots/updating-gallows-incorrect.png) ![A second screenshot](/readme-screenshots/updating-gallows-correct.png) |
+| Win The Game | To show congrats message and show the word | Guess the word in less than 6 tries | As intented | ![Screenshot with the win message](/readme-screenshots/guessed-word.png) |
+| Lose The Game | To show a message confirming the lose | Fail to guess in 6 tries | As intended | ![Screenshot with the losing game message](/readme-screenshots/out-of-tries-1.png) |
+| Play Again | To display the play again choice message | Choose between "y" and "n" | As intended | ![Screenshot with the play again message](/readme-screenshots/play-again.png) |
 
 
 
