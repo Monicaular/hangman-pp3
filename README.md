@@ -123,7 +123,12 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * **Out of tries**
     * User is shown a message that they are out of tries
 
-![Screenshot of out of tries message](/readme-screenshots/out-of-tries.png)
+![Screenshot of out of tries message](/readme-screenshots/out-of-tries-1.png)
+
+* **Play Again**
+    * User has the choice to play again or exit the game
+
+![Screenshot of play again choice message](/readme-screenshots/play-again.png)
 
 
 
