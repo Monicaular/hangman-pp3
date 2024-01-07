@@ -231,4 +231,6 @@ Testing was performed on various aspects, such as rules display, username input 
     * Username cannot contain special charcters
     * Username has a maximum 8 characters rule
 
+![Screenshot for username input validation](/readme-screenshots/username-input-validation.png)
+
 
