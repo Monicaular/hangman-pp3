@@ -109,7 +109,7 @@ def extract_word(word_list):
     return word.upper()
 
 
-def game_play(word):
+def game_play(word, username):
     """
     Checks if inserted letters and words are correct and validates them
     """
@@ -123,6 +123,9 @@ def game_play(word):
     while tries > 0:
         game_state(word, guessed_letters, tries)
         guess = input("Please guess a letter or a word:\n ").upper()
+
+        if tries == 1:
+            print(red_color.format("This is your last chance, choose carefully"))
 
         # Checks if the input is a single letter
         if guess.isalpha() and len(guess) == 1:
@@ -163,7 +166,9 @@ def game_play(word):
         elif guess.isalpha() and len(guess) > 1:
             # Checks if the input word matches the word
             if guess == word:
-                print(f'Congratulations! You guessed the word: {word}')
+                congrats_message = f"Nicely done, you are a Hangman pro {username.capitalize()}"
+                print(green_color.format(congrats_message))
+                print(f'You guessed the word: {word}')
                 return
             else:
                 print("Incorrect word guess. Try again.")
@@ -171,7 +176,8 @@ def game_play(word):
                 guessed_words.add(guess)
         else:
             print("Invalid input. Please enter letters.")
-    print(f"Sorry, you're out of tries. The word was: {word}")  
+    print(f"Nice try, perhaps you need more practice, {username.capitalize()}.")
+    print(f"The word was: {word}")
 
 def game_state(word, guessed_letters, tries):
     """
@@ -215,7 +221,7 @@ def main():
     """
     show_title()
     show_rules()
-    add_username()
+    username = add_username()
     level = choose_difficulty()
 
     if level == 1:
@@ -229,7 +235,7 @@ def main():
 
     print(f"Chosen difficulty level: {level}")
 
-    game_play(word)
+    game_play(word, username)
 
     play_hangman_again()
 

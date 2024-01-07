@@ -26,6 +26,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 3. [How to Play](#how-to-play)
 4. [Flowchart](#flowchart)
 5. [User Experience (UX)](#user-experience)
+    - [User Stories](#user-stories)
 
 
 ## How to play <a name="how to play"></a>
@@ -47,6 +48,8 @@ If the user inputs a single letter, it is revealed only if it is correct, and it
 Players can continue guessing letters until they reach the 6th try, at which point the game displays the hanged man's full body, indicating that the game has been lost.
 
 The game is simple to grasp and offers a well-balanced mix of challenge and reward. It's also an enjoyable way to boost one's vocabulary and spelling abilities.
+
+### User Stories <a name="user stories"></a>
 
 
 
