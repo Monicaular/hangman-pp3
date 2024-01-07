@@ -28,6 +28,14 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 5. [User Experience (UX)](#user-experience)
     - [User Stories](#user-stories)
 6. [Features](#features)
+    - [Existing Features](#existing-features)
+7. [Features to Implement](#features-to-implement)
+8. [Designs](#designs)
+9. [Technologies](#technologies)
+10. [Frameworks, Libraries & Programs Used](#frameworks-used)
+11. [Testing](#testing)
+
+
 
 
 ## How to play <a name="how to play"></a>
@@ -78,7 +86,7 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * **Difficulty setting** - the user can choose the difficulty level. 
 * **Play again** - the user can choose to play again or to exit.
 
-### Existing Features
+### Existing Features <a name="existing features"></a>
 * **Start Screen**
     * Shows the graphic title and the welcome message
 
@@ -130,7 +138,7 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 
 ![Screenshot of play again choice message](/readme-screenshots/play-again.png)
 
-## Features to Implement
+## Features to Implement <a name="features to implement"></a>
 
 * Multiple player option
 * Different word categories
@@ -138,7 +146,7 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * Score tracking system
 * More advanced graphics
 
-## Design
+## Design <a name="design"></a>
 
 * Colours
     * Pink
@@ -149,11 +157,11 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * Flowchart
     * [Lucidchart](https://www.lucidchart.com/pages/)
 
-## Technologies used
+## Technologies used <a name="technologies used"></a>
 
 * [Phyton 3.12](https://www.python.org/)
 
-## Frameworks, Libraries & Programs Used
+## Frameworks, Libraries & Programs Used <a name="frameworks used"></a>
 
 * [Codeanywhere](https://app.codeanywhere.com/)
     * To write the code for the game.
@@ -168,7 +176,27 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * [CI Python Linter](https://pep8ci.herokuapp.com/)
     * To check the code for errors.
 
-## Testing
+## Testing <a name="testing"></a>
+
+<details><summary>run.py - CI Python Linter Check</summary>
+
+![Screenshot of the errors for the run.py file](/readme-screenshots/run-py-linter-check.png)
+
+</details>
+
+<details><summary>words.py - CI Python Linter Check</summary>
+
+![Screenshot of the errors for the words.py file](/readme-screenshots/words-py-linter-check.png)
+
+</details>
+
+<details><summary>style.py - CI Python Linter Check</summary>
+
+![Screenshot of the errors for the style.py file](/readme-screenshots/style-py-linter-check.png)
+
+</details>
+
+
 
 
 
