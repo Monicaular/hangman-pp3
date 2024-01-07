@@ -38,7 +38,15 @@ The game will begin by asking the user to review the rules of the game. After th
 
 ![Image with the Hangman game flowchart ](/readme-screenshots/hangman-game-flowchart.png)
 
-
 ## User Experience (UX) <a name="user experince"></a>
+
+Hangman is a classic game that offers simple but entertaining gameplay. The game challenges players to guess a letter or the whole word in 6 tries. At the beginning of the game, a series of blank underscores is displayed, one for each letter of the word. This helps the player to determine the length of the word and to start guessing letters that could make it easier to win the game. 
+
+If the user inputs a single letter, it is revealed only if it is correct, and its position is displayed on the screen. If the letter is incorrect, the user receives a message highlighted in red, and a graphic with the parts of the body that represent the remaining tries is displayed. The user is also allowed to write the whole word in one go, without being restricted to guessing a single letter.
+
+Players can continue guessing letters until they reach the 6th try, at which point the game displays the hanged man's full body, indicating that the game has been lost.
+
+The game is simple to grasp and offers a well-balanced mix of challenge and reward. It's also an enjoyable way to boost one's vocabulary and spelling abilities.
+
 
 
