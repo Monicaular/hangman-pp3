@@ -130,6 +130,14 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 
 ![Screenshot of play again choice message](/readme-screenshots/play-again.png)
 
+## Features to Implement
+
+* Multiple player option
+* Different word categories
+* Wider range of words
+* Score tracking system
+* More advanced graphics
+
 
 
 
