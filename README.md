@@ -51,5 +51,22 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 
 ### User Stories <a name="user stories"></a>
 
+* First Time visitor goals
+    * To be able to understand easily what is the game about.
+    * To understand how the game works by having instructions included.
+    * To enjoy playing the game and want to replay it.
+    * To recommend it to their friends.
+
+* Returning visitor goals
+    * To find themselves continuosly entertained.
+    * To learn new words and add them to their vocabulary.
+    * To explore a more dificult level. 
+
+* Frequent user goals
+    * To improve their speed and accuracy in guessing the words.
+    * To up their level difficulty and feel challenged.
+    * Recommending the game to their friends and relatives.
+    
+
 
 
