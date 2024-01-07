@@ -8,7 +8,7 @@ def show_title():
     Shows the the name of the game in a more graphical style
     """
     lilac_color = style_colors['lilac']
-    
+ 
     game_title = """
   _    _            _   _    _____   ___  ___            _   _
  | |  | |    /\\    | \\ | |  / ____| |   \\/   |    /\\    | \\ | |
@@ -16,7 +16,7 @@ def show_title():
  |  __  |  / /\\ \\  | . ` | | | |_ | |  |\\/|  |  / /\\ \\  | . ` |
  | |  | | / ____ \\ | |\\  | | |__| | |  |  |  | / ____ \\ | |\\  |
  |_|  |_|/_/   \\__\\|_| \\_|  \\___| | |__|  |__|/_/   \\__\\|_| \\_|
-                                                         
+
 Welcome to Hangman Game!
     """
     coloured_game_title = lilac_color.format(game_title)
@@ -31,7 +31,7 @@ def show_rules():
     display_rules = input("Would you like to see the game rules? (Y/N)\n ")
     while display_rules.upper() not in ["Y", "N"]:
         display_rules = input('Please only insert Y or N\n').upper()
-    
+
     if display_rules.upper() == "Y":
         rules = [
             "Insert your username so we know who are we playing with",
@@ -47,14 +47,15 @@ def show_rules():
         for rule in rules:
             formatted_rule = pink_color.format(rule)
             print(f"  - {formatted_rule}")
-            
+
     else:
         print("You chose to skip the rules. Let's start the game")
+
 
 def add_username():
     """
     Asks the player to insert a username and validates the input
-    """   
+    """
     while True:
         try:
             print()
@@ -95,7 +96,8 @@ def choose_difficulty():
             choice = int(choice)
             # Validate user input
             if choice not in [1, 2, 3]:
-                raise ValueError("\nInvalid choice. Please enter 1, 2, or 3.\n")
+                raise ValueError("\nInvalid choice.\
+                                Please enter 1, 2, or 3.\n")
             return choice  # Return the selected choice
         except ValueError as e:
             print(e)
@@ -158,12 +160,13 @@ def game_play(word, username):
                 if "_" not in word_completed:
                     print(f'Well Done! You guessed the word: {word}')
                     return
-            
+
         # Checks if the input is multiple letters
         elif guess.isalpha() and len(guess) > 1:
             # Checks if the input word matches the word
             if guess == word:
-                congrats_message = f"Nicely done, you are a Hangman pro {username.capitalize()}"
+                congrats_message = f"Nicely done, you are\
+                a Hangman pro {username.capitalize()}"
                 print(green_color.format(congrats_message))
                 print(f'You guessed the word: {word}')
                 return
@@ -174,20 +177,22 @@ def game_play(word, username):
         else:
             print("Invalid input. Please enter letters.")
     print(words.hangman_graphic[6])
-    lost_message = f"You lost, perhaps you need more practice, {username.capitalize()}."
+    lost_message = f"You lost, perhaps\
+    you need more practice, {username.capitalize()}."
     print(red_color.format(lost_message))
     print(f"The word was: {word}")
+
 
 def game_state(word, guessed_letters, tries):
     """
     It provides the Hangman Game implementation and
     makes a more user friendly display
-    """      
+    """
     # Displays the hangman graphic
     print(words.hangman_graphic[6 - tries])
-    display_word = " ".join([letter if letter \
-                                in guessed_letters else "_" for letter \
-                                in word])
+    display_word = " ".join([letter if letter
+                            in guessed_letters else "_" for letter
+                            in word])
     print(f"Word: {display_word}")
     print(f"You have {tries} tries left")
     print(f"Guessed letters: {', '.join(sorted(guessed_letters))}")
@@ -209,15 +214,16 @@ def play_hangman_again():
             print("Invalid input. Please enter 'y' to play again or\
                   'n' to exit.")
 
+
 def main():
     """
     This function is the primary driver of the game program,
     It first displays the title of the game,
-    Then it displays the rules and adds a username, 
+    Then it displays the rules and adds a username,
     It prompts the user to choose the difficulty and assigns it,
-    Selects a random word from the chosen word list, 
+    Selects a random word from the chosen word list,
     Initiates the game play and
-    lastly it prompts the user to decide whether to play the game again. 
+    lastly it prompts the user to decide whether to play the game again.
     """
     show_title()
     show_rules()
@@ -238,6 +244,7 @@ def main():
     game_play(word, username)
 
     play_hangman_again()
+
 
 if __name__ == "__main__":
     main()

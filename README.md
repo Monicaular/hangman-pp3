@@ -168,7 +168,7 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 * [CI Python Linter](https://pep8ci.herokuapp.com/)
     * To check the code for errors.
 
-
+## Testing
 
 
 
