@@ -27,6 +27,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 4. [Flowchart](#flowchart)
 5. [User Experience (UX)](#user-experience)
     - [User Stories](#user-stories)
+6. [Features](#features)
 
 
 ## How to play <a name="how to play"></a>
@@ -67,6 +68,15 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
     * To up their level difficulty and feel challenged.
     * Recommending the game to their friends and relatives.
     
+## Features <a name="features"></a>
+
+* **Word selection** - the game starts with a pre-selected word that the player needs to guess.
+* **Display of hidden words** - the word is initially displayed with blank underscores representing each letter.
+* **Incorrect guess counter** - there is a counter that keeps track of the letters that have been entered already and number of tries left.
+* **Feedback for correct and incorrect guess** - after each gueess, the game provides feedbsck by revealing the positions for the guessed letters and displaying a message letting them know if they guessed or not.
+* **Graphics for hangman** - a visual representation of a hangman is gradually drawn for each incorrect guess. 
+* **Difficulty setting** - the user can choose the difficulty level. 
+* **Play again** - the user can choose to play again or to exit.
 
 
 
