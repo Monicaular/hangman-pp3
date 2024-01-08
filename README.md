@@ -315,7 +315,12 @@ To make a local clone in gihub, please follow the below steps:
 * How to add colors to text in Python [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-add-colour-to-text-python/).
 * Understanding the whole Python concept [Code Institute](https://learn.codeinstitute.net/dashboard).
 
+## Acknowledgements
 
+* My mentor Mitko Bacharov for continous helpful feedback.
+* Code Insitute tutors for support.
+* Slack Community for encouragement.
+* Online communities like Stack Overflow for offering answers. 
 
 
 
