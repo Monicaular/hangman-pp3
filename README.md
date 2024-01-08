@@ -249,4 +249,7 @@ Testing was performed on various aspects, such as rules display, username input 
 * Play Again
     * Can only contain letters "y" and "n"
     * cannot contain spaces or special character
-    
+
+![Screenshot with the play again input validation](/readme-screenshots/play-again-validation.png)
+
+
