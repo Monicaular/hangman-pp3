@@ -37,6 +37,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 12. [Manual Testing](#manual-testing)
 13. [Input Validation Testing](#input-validation-testing)
 14. [Fixed Bugs](#fixed-bugs)
+15. [Deployment](#deployment)
 
 
 ## How to play <a name="how to play"></a>
@@ -259,6 +260,24 @@ Testing was performed on various aspects, such as rules display, username input 
 * When a space was inserted at the play again stage, the error message would not show up. However, the system would repeatedly ask if the user would like to play again if a space was mistakenly inputted. This has been resolved as shown above.
 * The game would end even though the user would have guessed the letter at the last try. This has been resolved.
 * All the above bugs were noticed by playing the game repeatedly whilist writing the code but also by friends that have tested it.
+
+## Deployment <a name="deployment"></a>
+
+In order to deploy this project to Heroku, Code Institute Python Essentials Template has been used so the python code can be viewed in a terminal browser.
+
+**Steps**:
+1. Log in to Heroku or create a new account.
+2. On the home page click "New" and then select "Create new app".
+3. Choose a unique app name and select the region.
+4. Click "Create app".
+5. On the next page look for "settings" and locate "Config Vars".
+6. Click "Reveal Config Vars" and add "PORT" as a key and the value "8000", then click "Add".
+7. Scroll down, locate "Buildpack" and click "Add", select "Python".
+8. Repeat step 7. only this time add "Node.js", make sure "Python" is first.
+9. Scroll to the top and select "Deploy" tab.
+10. Select GitHub as deployment method and search for your repository and link them together.
+11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy".
+12. Deployed site [Hangman](https://hangman-monica-pp3-cfdaaa86683d.herokuapp.com/).
 
 
 
