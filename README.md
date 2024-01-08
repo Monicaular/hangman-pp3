@@ -39,6 +39,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 14. [Fixed Bugs](#fixed-bugs)
 15. [Deployment](#deployment)
 16. [Forking the GitHub Repository](#forking-the-github-repository)
+17. [Local Clone](#local-clone)
 
 
 ## How to play <a name="how to play"></a>
@@ -288,6 +289,18 @@ By forking the repository, we make a copy of the original repository on our GitH
 2. At the top of the Repository (under the main navigation) locate "Fork" button.
 3. Now you should have a copy of the original repository in your GitHub account.
 
+
+## Local Clone <a name="local-clone"></a>
+
+To make a local clone in gihub, please follow the below steps:
+
+1. Log in to GitHub and locate GitHub Repository [hangman-pp3](https://github.com/Monicaular/hangman-pp3).
+2. Under the repository name click "Clone or download"
+3. Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone` and then paste The URL copied in the step 3.
+7. Press Enter and your local clone will be created.
 
 
 
