@@ -36,6 +36,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 11. [Testing](#testing)
 12. [Manual Testing](#manual-testing)
 13. [Input Validation Testing](#input-validation-testing)
+14. [Fixed Bugs](#fixed-bugs)
 
 
 ## How to play <a name="how to play"></a>
@@ -251,5 +252,19 @@ Testing was performed on various aspects, such as rules display, username input 
     * cannot contain spaces or special character
 
 ![Screenshot with the play again input validation](/readme-screenshots/play-again-validation.png)
+
+## Fixed Bugs <a name="fixed bugs"></a>
+
+* The hangman's final gallows stage did not appear when the game was lost. This have been resolved.
+* When a space was inserted at the play again stage, the error message would not show up. However, the system would repeatedly ask if the user would like to play again if a space was mistakenly inputted. This has been resolved as shown above.
+* The game would end even though the user would have guessed the letter at the last try. This has been resolved.
+* All the above bugs were noticed by playing the game repeatedly whilist writing the code but also by friends that have tested it.
+
+
+
+
+
+
+
 
 
