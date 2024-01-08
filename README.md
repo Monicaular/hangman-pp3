@@ -233,4 +233,20 @@ Testing was performed on various aspects, such as rules display, username input 
 
 ![Screenshot for username input validation](/readme-screenshots/username-input-validation.png)
 
+* Select difficulty level
 
+    * Can only contain numbers
+    * Can only have the values 1, 2 or 3
+
+![Screenshot for difficulty level input validation](/readme-screenshots/difficulty-level-validation.png)
+
+* Guess a letter or a word
+    * Can only input letters
+
+![Screenshot with inputing a special character](/readme-screenshots/guess-letters-words-validation.png)
+![Screenshot with inputing a number](/readme-screenshots/guess-letters-words-validation-1.png)
+
+* Play Again
+    * Can only contain letters "y" and "n"
+    * cannot contain spaces or special character
+    

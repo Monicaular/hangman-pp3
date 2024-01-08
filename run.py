@@ -208,8 +208,7 @@ def play_hangman_again():
             print("Thanks for playing Hangman! Goodbye!")
             break
         else:
-            print("Invalid input. Please enter 'y' to play again or\
-                  'n' to exit.")
+            print("Invalid input. Please enter 'y' to play again or 'n' to exit.")
 
 
 def main():
