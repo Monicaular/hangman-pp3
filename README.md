@@ -41,6 +41,9 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 16. [Forking the GitHub Repository](#forking-the-github-repository)
 17. [Local Clone](#local-clone)
 18. [Credits](#credits)
+    * [Content](#content)
+    * [Code](#code)
+19. [Acknowledgements](#acknowledgements)
 
 
 ## How to play <a name="how to play"></a>
@@ -84,7 +87,7 @@ The game is simple to grasp and offers a well-balanced mix of challenge and rewa
 ## Features <a name="features"></a>
 
 * **Word selection** - the game starts with a pre-selected word that the player needs to guess.
-* **Display of hidden words** - the word is initially displayed with blank underscores representing each letter.
+* **Display of hidden word** - the word is initially displayed with blank underscores representing each letter.
 * **Incorrect guess counter** - there is a counter that keeps track of the letters that have been entered already and number of tries left.
 * **Feedback for correct and incorrect guess** - after each gueess, the game provides feedbsck by revealing the positions for the guessed letters and displaying a message letting them know if they guessed or not.
 * **Graphics for hangman** - a visual representation of a hangman is gradually drawn for each incorrect guess. 
@@ -209,17 +212,17 @@ Testing was performed on various aspects, such as rules display, username input 
 | Feature | Expected Result | Steps Taken | Actual Result | Screenshot |
 | ------- | ----------------| ------------ | ------------ | ----------|
 | Start Screen | To show the graphic and the welcome message| None | As intended | ![Screenshot with the logo and welcome message](/readme-screenshots/intro-screen.png) |
-| Display Rules | To display rules or to skip them by using letters "y" and "n" | Insert "y" to view and "n" to skip | As intented | ![Screenshot of the displayed rules](/readme-screenshots/game-rules.png) |
-| Create Username | To get username and use it in the game's messages | Insert alphanunumeric username | As intented | ![Screenshot os the entered username](/readme-screenshots/create-username.png) |
+| Display Rules | To display rules or to skip them by using letters "y" and "n" | Insert "y" to view and "n" to skip | As intended | ![Screenshot of the displayed rules](/readme-screenshots/game-rules.png) |
+| Create Username | To get username and use it in the game's messages | Insert alphanunumeric username | As intended | ![Screenshot os the entered username](/readme-screenshots/create-username.png) |
 | Personalised Message With The Username | To display username in messages | None | As intented | ![Screenshot with the personalised messages](/readme-screenshots/personalised-message-lost.png) ![Another screenshot](/readme-screenshots/personalised-messsage-won.png) |
-| Choose Difficulty Level | To retrieve the number from the options | Insert 1, 2 or 3 | As intented | ![Screenshot with the difficulty level options](/readme-screenshots/difficulty-choice.png) |
-| Guess a letter or a word | Prompts the user to guess a letter or go for the whole word | Input a letter or a word to guess | As intented | ![Screenshot of the prompt to enter a letter or a word](/readme-screenshots/make-a-guess.png) |
-| Correct Guess | To display the position of the letter, the gallows with no lost tries, a list of the letters that already been inserted | Guessed a correct letter | As intented | ![Screenshot of a correct guessed letter](/readme-screenshots/guessed-letter.png)
-| Incorrect Guess | To display incorrect message, the gallows with the left tries, the list with the already insterted letted and updated word | Guessed wrong letter | As intented | ![Screenshot with the incorrect guess message](/readme-screenshots/incorrect-guess.png) |
-| Repeated Guess | To display a message saying guessed already, no penalty applied | Input a letter previously inserted | As intented | ![Screenshot of a message for a second input of a letter](/readme-screenshots/previous-guess.png) |
-| Hangman Gallows | To show the updated hangman gallows | Input several letters | As intented | ![Screenshots with the gallows updating whilist inserting right or wrong letters](/readme-screenshots/updating-gallows-incorrect.png) ![A second screenshot](/readme-screenshots/updating-gallows-correct.png) |
-| Win The Game | To show congrats message and show the word | Guess the word in less than 6 tries | As intented | ![Screenshot with the win message](/readme-screenshots/guessed-word.png) |
-| Lose The Game | To show a message confirming the lose | Fail to guess in 6 tries | As intended | ![Screenshot with the losing game message](/readme-screenshots/out-of-tries-1.png) |
+| Choose Difficulty Level | To retrieve the number from the options | Insert 1, 2 or 3 | As intended | ![Screenshot with the difficulty level options](/readme-screenshots/difficulty-choice.png) |
+| Guess a letter or a word | Prompts the user to guess a letter or go for the whole word | Input a letter or a word to guess | As intended | ![Screenshot of the prompt to enter a letter or a word](/readme-screenshots/make-a-guess.png) |
+| Correct Guess | To display the position of the letter, the gallows with no lost tries, a list of the letters that already been inserted | Guessed a correct letter | As intended | ![Screenshot of a correct guessed letter](/readme-screenshots/guessed-letter.png)
+| Incorrect Guess | To display incorrect message, the gallows with the left tries, the list with the already insterted letted and updated word | Guessed wrong letter | As intended | ![Screenshot with the incorrect guess message](/readme-screenshots/incorrect-guess.png) |
+| Repeated Guess | To display a message saying guessed already, no penalty applied | Input a letter previously inserted | As intended | ![Screenshot of a message for a second input of a letter](/readme-screenshots/previous-guess.png) |
+| Hangman Gallows | To show the updated hangman gallows | Input several letters | As intended | ![Screenshots with the gallows updating whilist inserting right or wrong letters](/readme-screenshots/updating-gallows-incorrect.png) ![A second screenshot](/readme-screenshots/updating-gallows-correct.png) |
+| Win The Game | To show congrats message and show the word | Guess the word in less than 6 tries | As intended | ![Screenshot with the win message](/readme-screenshots/guessed-word.png) |
+| Lose The Game | To show a message confirming the loss | Fail to guess in 6 tries | As intended | ![Screenshot with the losing game message](/readme-screenshots/out-of-tries-1.png) |
 | Play Again | To display the play again choice message | Choose between "y" and "n" | As intended | ![Screenshot with the play again message](/readme-screenshots/play-again.png) |
 
 ## Input validation testing <a name="input validation"></a>
@@ -305,17 +308,17 @@ To make a local clone in gihub, please follow the below steps:
 
 ## Credits <a name="credits"></a>
 
-### Content
+### Content <a name="content"></a>
 
 * Hangam Game.
 * All content has been written by the developer.
 
-### Code
+### Code <a name="code"></a>
 * Helped me understand how a hangman game works [Practice Python](https://www.practicepython.org/).
 * How to add colors to text in Python [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-add-colour-to-text-python/).
 * Understanding the whole Python concept [Code Institute](https://learn.codeinstitute.net/dashboard).
 
-## Acknowledgements
+## Acknowledgements <a name="acknowledgements"></a>
 
 * My mentor Mitko Bacharov for continous helpful feedback.
 * Code Insitute tutors for support.
