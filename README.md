@@ -38,6 +38,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 13. [Input Validation Testing](#input-validation-testing)
 14. [Fixed Bugs](#fixed-bugs)
 15. [Deployment](#deployment)
+16. [Forking the GitHub Repository](#forking-the-github-repository)
 
 
 ## How to play <a name="how to play"></a>
@@ -278,6 +279,14 @@ In order to deploy this project to Heroku, Code Institute Python Essentials Temp
 10. Select GitHub as deployment method and search for your repository and link them together.
 11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy".
 12. Deployed site [Hangman](https://hangman-monica-pp3-cfdaaa86683d.herokuapp.com/).
+
+## Forking the GitHub Repository <a name="forking depository"></a>
+
+By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
+
+1. Log in to GitHub and locate GitHub Repository [hangman-pp3](https://github.com/Monicaular/hangman-pp3). 
+2. At the top of the Repository (under the main navigation) locate "Fork" button.
+3. Now you should have a copy of the original repository in your GitHub account.
 
 
 
