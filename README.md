@@ -40,6 +40,7 @@ Overall, Hangman is an enjoyable and demanding game that involves a combination 
 15. [Deployment](#deployment)
 16. [Forking the GitHub Repository](#forking-the-github-repository)
 17. [Local Clone](#local-clone)
+18. [Credits](#credits)
 
 
 ## How to play <a name="how to play"></a>
@@ -301,6 +302,18 @@ To make a local clone in gihub, please follow the below steps:
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone` and then paste The URL copied in the step 3.
 7. Press Enter and your local clone will be created.
+
+## Credits <a name="credits"></a>
+
+### Content
+
+* Hangam Game.
+* All content has been written by the developer.
+
+### Code
+* Helped me understand how a hangman game works [Practice Python](https://www.practicepython.org/).
+* How to add colors to text in Python [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-add-colour-to-text-python/).
+* Understanding the whole Python concept [Code Institute](https://learn.codeinstitute.net/dashboard).
 
 
 
